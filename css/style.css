@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.login-container {
+    background: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#loginForm{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+input[type="email"],
+input[type="password"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s ease;
+    width: 80%;
+    margin: auto;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #bbb;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #aaa;
+}
+
+#logar{
+    background-color: #525252;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    width: 70%;
+    margin: auto;
+}
+
+#logar:hover {
+    background-color: #797979;
+    
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+#btnGoogle, #btnGithub {
+    background: #525252;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#btnGoogle:hover, #btnGithub:hover {
+    background: #797979;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
